@@ -1,0 +1,172 @@
+
+/* Global */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	/* do rozmiaru wszystkich elementow HTML wlicza 
+	sie ich padding i border  */
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    
+    background: #0097e6;
+    color: #fff;
+    font-family: "Inconsolata", monospace;
+    font-weight: 300;
+}
+
+h1 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #888;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+section {
+    padding: 96px 0;
+}
+
+
+/* Navigation */
+
+.navigation {
+    background-color: #0097e6;
+    padding: 12px 0;
+    
+    ul {
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        
+        li {
+            display: inline-block;
+            margin: 0 36px 0 0;
+            position: relative;
+            
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            a:hover {
+                color: #33d9b2;
+            }
+            
+        }
+    }
+}
+
+.navigation ul ul li {
+    display: block;
+    margin: 0 0 12px 0;
+}
+
+.navigation ul ul li a {
+    display: block;
+    color: #0097e6;
+    padding: 0 24px;
+}
+
+.navigation ul ul li a:hover {
+    color: #33d9b2;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 12px;
+   
+}
+
+.navigation li:hover ul {
+    display: block;
+    text-align: center;
+}
+
+.splash {
+    background-color: #0097e6;
+    color: #fff;
+    min-height: 500px;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+.splash-inner h1 {
+    margin: 0;
+    font-size: 72px;
+    word-spacing: -24px;
+    font-weight: 700;
+    line-height: 1.2;
+    border-bottom: 0px;
+    padding: 0px;
+}
+
+.splash-inner div {
+    margin: 24px 0;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.page-title span {
+    font-weight: bold;
+    font-family: "Signika", sans-serif;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 36px auto 0 auto;
+    padding: 16px;
+    font-family: "Inconsolata", monospace;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    
+    background-color: inherit;
+    
+    background-position: 100% 0;
+    background-size: 300%;
+    
+    transition: all 1s;
+}
+
+.btn:hover {
+    background-position: 0 100%;
+    color: #0097e6;
+}
+
+.btn-one {
+    color: #fff;
+    border-color: #fff;
+    border-radius: 5px;
+    line-height: 1;
+    background-image: linear-gradient(90deg, #fff 50%, transparent 50%);
+}
